@@ -71,9 +71,21 @@
             position: relative;
         }
 
-        .hero-bg {
-            position: relative;
+        /* Hero section con 100vh y centrado vertical */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
             background: radial-gradient(circle at 80% 20%, rgba(238,197,91,0.08) 0%, rgba(248,228,139,0.02) 70%);
+        }
+        
+        .hero-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Botón principal con WhatsApp */
@@ -227,6 +239,9 @@
             section {
                 padding: 60px 0;
             }
+            .hero-section {
+                padding: 0;
+            }
             .promo-section {
                 padding: 32px 20px;
             }
@@ -321,6 +336,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
         
         .subtitle-hook {
@@ -356,13 +372,19 @@
             font-weight: 500;
             color: #1f3b43;
         }
+        
+        /* Ajuste para el texto de las cards */
+        .card-business p {
+            text-align: justify;
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero-bg" id="inicio">
-        <div class="container">
+    <!-- HERO SECTION con 100vh y centrado vertical -->
+    <section class="hero-section" id="inicio">
+        <div class="container hero-container">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-content">
                 <!-- Logo Nordac con gradiente -->
                 <div style="display: flex; justify-content: center; margin-bottom: 20px;">
@@ -402,21 +424,21 @@
                 </p>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
-                <!-- Card Novaklar -->
+                <!-- Card Novaklar con texto actualizado -->
                 <div data-aos="fade-up" data-aos-delay="100" class="card-business card-novaklar">
                     <img src="https://raw.githubusercontent.com/nordacc/web/refs/heads/main/logotipos/novaklar.svg" alt="Novaklar" class="logo-business" style="max-width: 180px;">
                     <h3 style="font-family: 'NovaklarFont', 'Inter', sans-serif; font-size: 1.8rem; color: #0d4c7f; margin-bottom: 12px;">Novaklar</h3>
-                    <p style="color: #2c3e50; margin-bottom: 20px;">Servicios financieros digitales, accesibles y eficientes para el nuevo ecosistema.</p>
+                    <p style="color: #2c3e50; margin-bottom: 20px;">Con cerca de tres años en el mercado, comercializamos servicios digitales, suscripciones (incluyendo IA), plataformas de streaming y recargas para aplicaciones y juegos.</p>
                     <div style="margin-top: auto;">
                         <span style="background: #0d4c7f10; color: #0d4c7f; padding: 6px 14px; border-radius: 40px; font-size: 0.8rem;">+ Confianza</span>
                     </div>
                 </div>
 
-                <!-- Card Hanabi -->
+                <!-- Card Hanabi con texto actualizado -->
                 <div data-aos="fade-up" data-aos-delay="200" class="card-business card-hanabi">
                     <img src="https://raw.githubusercontent.com/nordacc/web/refs/heads/main/logotipos/hanabi.svg" alt="Hanabi" class="logo-business" style="max-width: 180px;">
                     <h3 style="font-family: 'HanabiFont', 'Inter', sans-serif; font-size: 1.8rem; color: #061bb0; margin-bottom: 12px;">Hanabi</h3>
-                    <p style="color: #2c3e50; margin-bottom: 20px;">Experiencias interactivas y soluciones creativas para potenciar marcas digitales.</p>
+                    <p style="color: #2c3e50; margin-bottom: 20px;">Empresa fundada en 2026, enfocada en la comercialización de servicios digitales, con un modelo de trabajo más flexible y en constante construcción para quienes buscan adaptarse y crecer.</p>
                     <div style="margin-top: auto;">
                         <span style="background: #c0caff30; color: #061bb0; padding: 6px 14px; border-radius: 40px; font-size: 0.8rem;">+ Creatividad</span>
                     </div>
