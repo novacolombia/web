@@ -265,6 +265,43 @@
             margin-bottom: 12px;
         }
         
+        /* Mensaje sutil "Desliza hacia abajo" - ubicado sobre el logo */
+        .scroll-hint {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            cursor: default;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+        .scroll-hint span {
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #a0894b;
+            background: rgba(238,197,91,0.15);
+            padding: 4px 12px;
+            border-radius: 40px;
+            backdrop-filter: blur(2px);
+        }
+        .scroll-hint i {
+            font-size: 0.8rem;
+            color: #c4a24b;
+            margin-top: 3px;
+        }
+        @keyframes subtle-bounce {
+            0%, 100% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(3px);
+                opacity: 1;
+            }
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             section {
@@ -321,6 +358,9 @@
             }
             .earnings-example h4 {
                 font-size: 1.2rem;
+            }
+            .scroll-hint span {
+                font-size: 0.6rem;
             }
         }
         
@@ -418,6 +458,11 @@
     <section class="hero-section" id="inicio">
         <div class="container hero-container">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-content">
+                <!-- Mensaje sutil: Desliza hacia abajo - ubicado exactamente sobre el logo -->
+                <div class="scroll-hint">
+                    <span><i class="fas fa-chevron-down"></i> Desliza hacia abajo <i class="fas fa-chevron-down"></i></span>
+                </div>
+                
                 <!-- Logo Novat con gradiente -->
                 <div style="display: flex; justify-content: center; margin-bottom: 20px;">
                     <div class="gradient-mask-logo"></div>
