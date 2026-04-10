@@ -265,43 +265,6 @@
             margin-bottom: 12px;
         }
         
-        /* Mensaje sutil "Desliza hacia abajo" - ubicado sobre el logo */
-        .scroll-hint {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            cursor: default;
-            animation: subtle-bounce 2s ease-in-out infinite;
-        }
-        .scroll-hint span {
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 500;
-            color: #a0894b;
-            background: rgba(238,197,91,0.15);
-            padding: 4px 12px;
-            border-radius: 40px;
-            backdrop-filter: blur(2px);
-        }
-        .scroll-hint i {
-            font-size: 0.8rem;
-            color: #c4a24b;
-            margin-top: 3px;
-        }
-        @keyframes subtle-bounce {
-            0%, 100% {
-                transform: translateY(0);
-                opacity: 0.7;
-            }
-            50% {
-                transform: translateY(3px);
-                opacity: 1;
-            }
-        }
-        
         /* Responsive */
         @media (max-width: 768px) {
             section {
@@ -358,9 +321,6 @@
             }
             .earnings-example h4 {
                 font-size: 1.2rem;
-            }
-            .scroll-hint span {
-                font-size: 0.6rem;
             }
         }
         
@@ -458,20 +418,15 @@
     <section class="hero-section" id="inicio">
         <div class="container hero-container">
             <div data-aos="fade-up" data-aos-duration="800" class="hero-content">
-                <!-- Mensaje sutil: Desliza hacia abajo - ubicado exactamente sobre el logo -->
-                <div class="scroll-hint">
-                    <span><i class="fas fa-chevron-down"></i> Desliza hacia abajo <i class="fas fa-chevron-down"></i></span>
-                </div>
-                
                 <!-- Logo Novat con gradiente -->
                 <div style="display: flex; justify-content: center; margin-bottom: 20px;">
                     <div class="gradient-mask-logo"></div>
                 </div>
                 
-               <!-- Título "Novat" con N mayúscula, tipografía oficial -->
-<h1 class="hero-title" style="font-family: 'NovatFont', 'Inter', sans-serif; font-size: 4rem; font-weight: 700; color: #106b63; margin-bottom: 12px; letter-spacing: -0.02rem; text-transform: none;">
-    Novat
-</h1>
+                <!-- Título "novat" en minúscula con tipografía oficial -->
+                <h1 class="hero-title" style="font-family: 'NovatFont', 'Inter', sans-serif; font-size: 4rem; font-weight: 700; color: #106b63; margin-bottom: 12px; letter-spacing: -0.02rem; text-transform: lowercase;">
+                    novat
+                </h1>
                 
                 <!-- Subtítulo -->
                 <p class="subtitle-hook" style="font-size: 1.05rem; font-weight: 500; color: #2c5a52; margin-bottom: 24px; text-align: center; width: 100%;">
@@ -480,7 +435,7 @@
                 
                 <!-- Nueva descripción de Novat -->
                 <p style="font-size: 1.05rem; max-width: 720px; margin: 0 auto; color: #2c3e44; line-height: 1.6; text-align: justify;">
-                    Novat es un conglomerado empresarial enfocado en la creación, desarrollo y escalamiento de marcas dentro del ecosistema digital. Como casa matriz, lidera y respalda estratégicamente a sus principales unidades de negocio, Novaklar y Hanabi, compañías especializadas en la comercialización de productos y servicios digitales a nivel nacional en Colombia.
+                    Novat es un conglomerado empresarial dedicado a la gestión y fortalecimiento de sus marcas dentro del entorno digital. Como empresa principal, lidera e impulsa estratégicamente a sus unidades de negocio, Novaklar y Hanabi, compañías especializadas en la comercialización de productos y servicios digitales en todo Colombia.
                 </p>
                 
                 <div style="text-align: center; margin-top: 32px;">
